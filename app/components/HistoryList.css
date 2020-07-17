@@ -1,0 +1,13 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  overflow-y: scroll;
+}
+
+.list li:not(:last-child) {
+  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+}

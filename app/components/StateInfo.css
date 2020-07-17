@@ -1,0 +1,13 @@
+.wrapper {
+  margin-bottom: 0.8em;
+}
+
+.wrapper > h2 {
+  margin-bottom: 0.2em;
+}
+
+.wrapper > h5 {
+  margin: 0;
+  font-weight: normal;
+  color: var(--dark-gray);
+}

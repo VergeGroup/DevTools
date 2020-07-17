@@ -1,0 +1,92 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+:root {
+  --dark-bg-color: #202020;
+  --dark-indigo: #5e5be6;
+  --dark-blue: #0b84ff;
+  --dark-teal: #63d2ff;
+  --dark-gray: rgba(152, 152, 152);
+}
+
+body {
+  position: relative;
+  margin: 0;
+  color: white;
+  height: 100vh;
+  background-color: #202020; /* var(--dark-bg-color); */
+  font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN',
+    'Hiragino Sans', Meiryo, sans-serif;
+  overflow: hidden;
+}
+
+#root {
+  height: 100%;
+}
+
+h2 {
+  margin: 0;
+  font-size: 2.25rem;
+  font-weight: bold;
+  letter-spacing: -0.025em;
+  color: #fff;
+}
+
+h4 {
+  margin: 0.4rem;
+}
+
+h5 {
+  margin: 0.4rem;
+}
+
+p {
+  font-size: 24px;
+}
+
+ul {
+  margin: 0;
+  padding-inline-start: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  opacity: 0.75;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* TreeChart */
+
+.link {
+  stroke: var(--dark-indigo) !important;
+}
+
+.nodeCircle {
+  stroke: var(--dark-gray) !important;
+  fill: var(--dark-blue) !important;
+}
+
+.nodeText {
+  fill: #ddd !important;
+}
+
+.tooltip {
+  font-size: 0.8em;
+  background: rgba(255, 255, 255, 0.3);
+  color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+}

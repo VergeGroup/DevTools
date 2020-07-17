@@ -1,0 +1,18 @@
+{
+  "name": "verge-dev-tools",
+  "productName": "verge-dev-tools",
+  "version": "0.8.0",
+  "description": "Developer Tools for Verge - Flux for SwiftUI",
+  "main": "./main.prod.js",
+  "author": {
+    "name": "Takuma Matushita",
+    "email": "takuma.matt@gmail.com",
+    "url": "https://github.com/takumatt"
+  },
+  "scripts": {
+    "electron-rebuild": "node -r ../internals/scripts/BabelRegister.js ../internals/scripts/ElectronRebuild.js",
+    "postinstall": "yarn electron-rebuild"
+  },
+  "license": "MIT",
+  "dependencies": {}
+}
